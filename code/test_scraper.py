@@ -12,12 +12,12 @@ from datetime import datetime, timedelta
 
 def test_basic_scraper():
     """Test basic scraper functionality"""
-    print("ðŸ§ª Testing TravelFinder Pro Scraper")
+    print("Testing TravelFinder Pro Scraper")
     print("=" * 50)
 
     # Initialize scraper
     scraper = TravelScraper()
-    print("âœ… Scraper initialized successfully")
+    print("Scraper initialized successfully")
 
     # Test search parameters
     origin = "JFK"
@@ -25,10 +25,10 @@ def test_basic_scraper():
     departure_date = (datetime.now() + timedelta(days=30)).strftime('%Y-%m-%d')
     return_date = (datetime.now() + timedelta(days=37)).strftime('%Y-%m-%d')
 
-    print(f"ðŸ” Testing search: {origin} â†’ {destination}")
-    print(f"ðŸ“… Departure: {departure_date}")
-    print(f"ðŸ“… Return: {return_date}")
-    print(f"ðŸ’° Max Price: $1000")
+    print(f"Testing search: {origin} â†’ {destination}")
+    print(f"Departure: {departure_date}")
+    print(f"Return: {return_date}")
+    print(f"Max Price: $1000")
     print()
 
     # Perform search
@@ -42,19 +42,19 @@ def test_basic_scraper():
             max_price=1000.0
         )
 
-        print(f"âœ… Search completed successfully!")
-        print(f"ðŸ“Š Found {len(results)} flight options")
+        print(f"Search completed successfully!")
+        print(f"Found {len(results)} flight options")
         print()
 
         if results:
-            print("ðŸŽ¯ Sample Results:")
+            print("Sample Results:")
             print("-" * 50)
             for i, trip in enumerate(results[:3]):  # Show first 3 results
                 print(f"{i+1}. {trip.airline}")
-                print(f"   ðŸ’° Price: ${trip.price:.2f}")
-                print(f"   â±ï¸  Duration: {trip.duration}")
-                print(f"   ðŸ”„ Stops: {trip.stops}")
-                print(f"   ðŸŒ Source: {trip.source_website}")
+                print(f"   Price: ${trip.price:.2f}")
+                print(f"   Duration: {trip.duration}")
+                print(f"   Stops: {trip.stops}")
+                print(f"   Source: {trip.source_website}")
                 print()
 
         return True
@@ -65,7 +65,7 @@ def test_basic_scraper():
 
 def test_price_trends():
     """Test price trend functionality"""
-    print("ðŸ“ˆ Testing Price Trends")
+    print("Testing Price Trends")
     print("=" * 50)
 
     scraper = TravelScraper()
@@ -74,23 +74,23 @@ def test_price_trends():
         trends = scraper.get_price_trends("JFK", "LAX", days=30)
 
         if trends:
-            print("âœ… Price trends generated successfully!")
-            print(f"ðŸ“Š Data points: {len(trends.get('dates', []))}")
-            print(f"ðŸ’° Average price: ${trends.get('average_price', 0):.2f}")
-            print(f"ðŸ’² Price range: ${trends.get('min_price', 0):.2f} - ${trends.get('max_price', 0):.2f}")
-            print(f"ðŸŽ¯ Best day: {trends.get('best_day', 'N/A')}")
+            print("Price trends generated successfully!")
+            print(f"Data points: {len(trends.get('dates', []))}")
+            print(f"Average price: ${trends.get('average_price', 0):.2f}")
+            print(f"Price range: ${trends.get('min_price', 0):.2f} - ${trends.get('max_price', 0):.2f}")
+            print(f"Best day: {trends.get('best_day', 'N/A')}")
             return True
         else:
-            print("âŒ No price trend data generated")
+            print("No price trend data generated")
             return False
 
     except Exception as e:
-        print(f"âŒ Error getting price trends: {e}")
+        print(f"Error getting price trends: {e}")
         return False
 
 def main():
     """Run all tests"""
-    print("ðŸš€ TravelFinder Pro - Test Suite")
+    print("TravelFinder Pro - Test Suite")
     print("=" * 50)
     print()
 
@@ -103,26 +103,26 @@ def main():
     total = len(tests)
 
     for test_name, test_func in tests:
-        print(f"ðŸ§ª Running {test_name} test...")
+        print(f"Running {test_name} test...")
         try:
             if test_func():
-                print(f"âœ… {test_name} test PASSED")
+                print(f"{test_name} test PASSED")
                 passed += 1
             else:
-                print(f"âŒ {test_name} test FAILED")
+                print(f"{test_name} test FAILED")
         except Exception as e:
-            print(f"âŒ {test_name} test ERROR: {e}")
+            print(f"{test_name} test ERROR: {e}")
 
         print()
 
     print("=" * 50)
-    print(f"ðŸ“Š Test Results: {passed}/{total} tests passed")
+    print(f"Test Results: {passed}/{total} tests passed")
 
     if passed == total:
-        print("ðŸŽ‰ All tests passed! TravelFinder Pro is ready to use.")
-        print("ðŸ“ Run 'streamlit run app.py' to start the web interface.")
+        print("All tests passed! TravelFinder Pro is ready to use.")
+        print("Run 'streamlit run app.py' to start the web interface.")
     else:
-        print("âš ï¸  Some tests failed. Check the output above for details.")
+        print("Some tests failed. Check the output above for details.")
 
     return passed == total
 
