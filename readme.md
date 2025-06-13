@@ -29,3 +29,8 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+### 2. Development Environment
+```bash
+# Create virtual environment
+python -m venv travel_scraper_env
+source travel_scraper_env/bin/activate  # On Windows: travel_scraper_env\Scripts\activate
