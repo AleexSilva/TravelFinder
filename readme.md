@@ -40,3 +40,7 @@ pip install -r requirements.txt
 
 # Run tests
 python test_scraper.py
+
+# Start development server
+streamlit run app.py --server.runOnSave true
+```
