@@ -44,3 +44,7 @@ python test_scraper.py
 # Start development server
 streamlit run app.py --server.runOnSave true
 ```
+
+## Cloud Deployment Options
+
+### 1. Streamlit Community Cloud (Recommended)
