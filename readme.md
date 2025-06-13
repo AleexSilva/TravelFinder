@@ -34,3 +34,9 @@ streamlit run app.py
 # Create virtual environment
 python -m venv travel_scraper_env
 source travel_scraper_env/bin/activate  # On Windows: travel_scraper_env\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run tests
+python test_scraper.py
