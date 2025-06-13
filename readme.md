@@ -48,3 +48,10 @@ streamlit run app.py --server.runOnSave true
 ## Cloud Deployment Options
 
 ### 1. Streamlit Community Cloud (Recommended)
+
+**Steps:**
+1. Push your code to GitHub
+2. Visit [share.streamlit.io](https://share.streamlit.io)
+3. Connect your GitHub account
+4. Deploy your repository
+5. Your app will be available at `https://username-travel-scraper-app-xyz.streamlit.app`
