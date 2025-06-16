@@ -15,3 +15,9 @@ A professional-grade travel booking scraper with a beautiful Streamlit interface
 - **Travel agency design**: Professional, modern UI with travel-themed styling
 - **Responsive layout**: Works perfectly on desktop and mobile
 - **Interactive filtering**: Sort and filter results in real-time
+
+### Advanced Features
+- **Price predictions**: Smart recommendations for best booking times
+- **Flexible search**: Round trip, one-way, and multi-city options
+- **Real-time updates**: Live price tracking and alerts
+- **Comparison tools**: Side-by-side flight comparison
