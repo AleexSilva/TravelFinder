@@ -10,8 +10,3 @@ A professional-grade travel booking scraper with a beautiful Streamlit interface
 - **Error handling**: Robust error handling and retry mechanisms
 - **Data normalization**: Consistent data format across all sources
 - **Price trend analysis**: Historical price tracking and recommendations
-
-### Beautiful Streamlit Interface
-- **Travel agency design**: Professional, modern UI with travel-themed styling
-- **Responsive layout**: Works perfectly on desktop and mobile
-- **Interactive filtering**: Sort and filter results in real-time
