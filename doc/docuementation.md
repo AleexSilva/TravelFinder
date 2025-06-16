@@ -21,3 +21,11 @@ A professional-grade travel booking scraper with a beautiful Streamlit interface
 - **Flexible search**: Round trip, one-way, and multi-city options
 - **Real-time updates**: Live price tracking and alerts
 - **Comparison tools**: Side-by-side flight comparison
+
+## Quick Start
+
+### Prerequisites
+```bash
+pip install streamlit pandas plotly requests beautifulsoup4 selenium
+```
+
