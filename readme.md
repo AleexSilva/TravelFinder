@@ -55,3 +55,6 @@ streamlit run app.py --server.runOnSave true
 3. Connect your GitHub account
 4. Deploy your repository
 5. Your app will be available at `https://username-travel-scraper-app-xyz.streamlit.app`
+
+**Benefits:**
+- Free hosting
