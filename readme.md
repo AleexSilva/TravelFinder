@@ -60,3 +60,4 @@ streamlit run app.py --server.runOnSave true
 - Free hosting
 - Automatic deployments
 - SSL certificates
+- Easy sharing
