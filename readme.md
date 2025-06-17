@@ -58,3 +58,5 @@ streamlit run app.py --server.runOnSave true
 
 **Benefits:**
 - Free hosting
+- Automatic deployments
+- SSL certificates
