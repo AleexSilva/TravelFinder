@@ -65,3 +65,8 @@ streamlit run app.py --server.runOnSave true
 ### 2. Heroku Deployment
 
 **Create additional files:**
+
+`Procfile`:
+```
+web: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
+```
